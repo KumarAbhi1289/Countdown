@@ -19,3 +19,9 @@ body{
     transform: translate(-50%, -50%);
     text-shadow: 2px 2px 3rem #ff0000;
 }
+
+@media(max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+}
