@@ -9,12 +9,24 @@
 </head>
 <body>
     <div class="countdown">
-        <h1 >#<span id="count"></span></h1>
+        <h1 id="head">#<span id="count"></span></h1>
     </div>
 </body>
 
 <script>
+    screen = parseInt(prompt("Enter size screen"))
     count = parseInt(prompt("Enter a number"))
+    counter = 0
+    document.getElementById('head').style.fontSize = screen+"rem";
     document.getElementById('count').innerHTML = count
+    document.querySelector('.countdown').addEventListener('click', () => {
+        if (counter > 0){
+            count = parseInt(prompt("Enter a number"))
+        }
+        document.getElementById('head').style.fontSize = screen+"rem";
+        document.getElementById('count').innerHTML = count
+        counter += 1
+    } )
+    
 </script>
 </html>

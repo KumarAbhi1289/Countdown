@@ -4,13 +4,15 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+.countdown{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     background-color: #000;
 }
-.countdown h1{
+
+h1{
     color: #fff;
     font-size: 30rem;
     position: absolute;
@@ -19,9 +21,9 @@ body{
     transform: translate(-50%, -50%);
     text-shadow: 2px 2px 3rem #ff0000;
 }
-
+/* 
 @media(max-width: 768px){
     html{
         font-size: 50%;
     }
-}
+} */
